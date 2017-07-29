@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Ukulele Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Music Buddy</title>
     <!-- Styling of alphaTab -->
     <style type="text/css">
 	.alphaTabSurface { box-shadow: 0 0 10px rgba(0,0,0,0.3); background:#FFF; border-radius:3px; }
@@ -35,20 +36,32 @@
     <link rel="stylesheet" href="support/player.css" />
 </head>
 <body>
-    <div id="alphaTab" data-file="files/NightWish.gp5" data-tracks="3"></div>
-    <div id="controls">
-        <div id="loadingInfo">Player not ready</div>
-        <div id="sfInfo">Loading Soundfont <span class="progress"></span></div>
-        <button class="button play" disabled="disabled" id="playPause">Play</button>
-        <button class="button" disabled="disabled" id="stop">Stop</button>
-
-        <div class="button-group" id="layoutButtons">
-            <button class="button active" disabled="disabled" id="page" data-layout="page" data-scrollmode="vertical">Page</button>
-            <button class="button" disabled="disabled" id="horizontalBarwise" data-layout="horizontal" data-scrollmode="horizontal-bar">Horizontal (Barwise)</button>
-            <button class="button" disabled="disabled" id="horizontalOffscreen" data-layout="horizontal" data-scrollmode="horizontal-offscreen">Horizontal (Offscreen)</button>
+    <div id="title1">
+    <img src="http://45.55.85.212/0729/Group9.png">
+    </div>
+    <img id="img1" src="http://45.55.85.212/0729/Group3.png">
+    <img id="img2" src="http://45.55.85.212/0729/Group10.png">
+    <br clear="left">
+    <br clear="right">
+    <div id="block1">
+        <div id="alphaTab" data-file="files/NightWish.gp5" data-tracks="3"></div>
+        
+    </div>
+    <div id="block2">
+        <div id="controls">
+            <div id="loadingInfo">Player not ready</div>
+            <div id="sfInfo">Loading Soundfont <span class="progress"></span></div>
+            <button class="button play" disabled="disabled" id="playPause">Play</button>
+            <button class="button" disabled="disabled" id="stop">Stop</button>
+    
+            <div class="button-group" id="layoutButtons">
+                <button class="button active" disabled="disabled" id="page" data-layout="page" data-scrollmode="vertical">Page</button>
+                <button class="button" disabled="disabled" id="horizontalBarwise" data-layout="horizontal" data-scrollmode="horizontal-bar">Horizontal (Barwise)</button>
+                <button class="button" disabled="disabled" id="horizontalOffscreen" data-layout="horizontal" data-scrollmode="horizontal-offscreen">Horizontal (Offscreen)</button>
+            </div>
+    
+            <button class="button" disabled="disabled" id="save">Save As A MIDI File</button>
         </div>
-
-        <button class="button" disabled="disabled" id="save">Save As A MIDI File</button>
     </div>
     
     <script type="text/javascript">
